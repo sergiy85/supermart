@@ -1,0 +1,141 @@
+(function($){
+
+	$( document ).ready( function() {
+		///// menu_state_open////////////
+		$( '.main-menu__icon' ).on( 'click', function() {
+			var $this = $( this ),
+				$parent = $this.parent( '.main-menu' );
+
+			$parent.toggleClass( 'menu_state_open' );
+		});
+		///// menu_state_open////////////
+		
+
+
+		////////////togle menu
+		var o = $('.toggle');
+			$(document).ready(function () {
+				$('.toggle').click(function (e) {
+					e.preventDefault(); 
+					var tmp = $(this);
+					o.each(function () {
+						if ($(this).hasClass('active') && !$(this).is(tmp)) {
+							$(this).parent().find('.toggle_cont').slideToggle();
+							$(this).removeClass('active');
+						}
+					});
+					$(this).toggleClass('active');
+					$(this).parent().find('.toggle_cont').slideToggle();
+		});
+		$(document).on('click touchstart', function (e) {
+			var container = $(".toggle-wrap");
+			var removeBtnWrap = $('#cart .btn-remove-wrap');
+			if (!container.is(e.target) && container.has(e.target).length === 0 && container.find('.toggle').hasClass('active')) { 
+				container.find('.active').toggleClass('active').parent().find('.toggle_cont').slideToggle();
+				if (removeBtnWrap.length > 0 ) {
+					removeBtnWrap.fadeOut();
+					}
+				}
+			});
+		});
+		///////////////////////
+
+		////////////////currensy menu///////////
+		$.fn.currensy = function() {
+			// начальные параметры
+			// задаем стандартную высоту div'a. 
+			var selectDefaultHeight = $('#currensy').height();
+			// угол поворота изображения в div'e 
+			var rotateDefault = "rotate(0deg)";
+
+			// после нажатия кнопки срабатывает функция, в которой 
+			// вычисляется исходная высота нашего div'a. 
+			// очень удобно для сравнения с входящими параметрами (то, что задается в начале скрипта) 
+			$('#currensy > .currensy-tag').click(function() {
+			// вычисление высоты объекта методом height() 
+			var currentHeight = $('#currensy').height();
+			// проверка условия на совпадение/не совпадение с заданной высотой вначале,
+			// чтобы понять. что делать дальше. 
+			if (currentHeight < 100 || currentHeight == selectDefaultHeight) {
+			// если высота блока не менялась и равна высоте, заданной по умолчанию,
+			// тогда мы открываем список и выбираем нужный элемент.
+			$('#currensy').height("150px");  // «точка остановки анимации»
+			// здесь стилизуем нашу стрелку и делаем анимацию средствами CSS3 
+			$('.currensy__icon').css({borderRadius: "1000px", transition: ".2s", transform: "rotate(180deg)"});
+			}
+			// иначе если список развернут (высота больше или равна 250 пикселям), 
+			// то при нажатии на абзац с классом valueTag, сворачиваем наш список и
+			// и присваиваем блоку первоначальную высоту + поворот стрелки в начальное положение
+			if (currentHeight >= 100) {
+			$('#currensy').height(selectDefaultHeight);
+			$('.currensy__icon').css({transform: rotateDefault});
+			}
+			});
+
+			// так же сворачиваем список при выборе нужного элемента 
+			// и меняем текст абзаца на текст элемента в списке
+			$('li.option').click(function() {
+			$('#currensy').height(selectDefaultHeight);
+			$('img.arrow').css({transform: rotateDefault});
+			$('.currensy-tag').text($(this).text());
+			});
+		};
+		$('selector').currensy();
+
+		$.fn.currensyLanuage = function() {
+			// начальные параметры
+			// задаем стандартную высоту div'a. 
+			var selectDefaultHeight = $('#currensy-lanuage').height();
+			// угол поворота изображения в div'e 
+			var rotateDefault = "rotate(0deg)";
+
+			// после нажатия кнопки срабатывает функция, в которой 
+			// вычисляется исходная высота нашего div'a. 
+			// очень удобно для сравнения с входящими параметрами (то, что задается в начале скрипта) 
+			$('#currensy-lanuage > .currensy-tag-lanuage').click(function() {
+			// вычисление высоты объекта методом height() 
+			var currentHeight = $('#currensy-lanuage').height();
+			// проверка условия на совпадение/не совпадение с заданной высотой вначале,
+			// чтобы понять. что делать дальше. 
+			if (currentHeight < 100 || currentHeight == selectDefaultHeight) {
+			// если высота блока не менялась и равна высоте, заданной по умолчанию,
+			// тогда мы открываем список и выбираем нужный элемент.
+			$('#currensy-lanuage').height("150px");  // «точка остановки анимации»
+			// здесь стилизуем нашу стрелку и делаем анимацию средствами CSS3 
+			$('.currensy__icon-lanuage').css({borderRadius: "1000px", transition: ".2s", transform: "rotate(180deg)"});
+			}
+			// иначе если список развернут (высота больше или равна 250 пикселям), 
+			// то при нажатии на абзац с классом valueTag, сворачиваем наш список и
+			// и присваиваем блоку первоначальную высоту + поворот стрелки в начальное положение
+			if (currentHeight >= 100) {
+			$('#currensy-lanuage').height(selectDefaultHeight);
+			$('.currensy__icon-lanuage').css({transform: rotateDefault});
+			}
+			});
+
+			// так же сворачиваем список при выборе нужного элемента 
+			// и меняем текст абзаца на текст элемента в списке
+			$('li.option-lanuage').click(function() {
+			$('#currensy-lanuage').height(selectDefaultHeight);
+			$('img.arrow').css({transform: rotateDefault});
+			$('.currensy-tag-lanuage').text($(this).text());
+			});
+		};
+		$('selector').currensyLanuage();
+
+
+
+
+		////////////////currensy menu///////////
+			$('.popup-content').magnificPopup({
+	        	type: 'inline'
+	    	});
+
+
+		
+
+
+	});// end ready
+
+})( jQuery );
+    
