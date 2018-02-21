@@ -14,29 +14,23 @@
 	flex-flow: row wrap;
 	padding: 80px 0 100px 0;
 
+
 }
 
 .main__content-block {
-	flex: 1 0 50%;
+	@include col();
+	@include size(6);
+	@include size-sm(12);
 	@include sm-block() {
-		flex: 1 0 100%;
-		padding-top: 40px;
+		&:last-child {
+			padding-top:25px;
+		}
 	}
 }
 
-.main__content-block:first-child {
-	padding-right: 15px;
-	@include xs-block(){
-		padding-right: 0;
-	}
-}
 
-.main__content-block:last-child {
-	padding-left: 15px;
-	@include xs-block(){
-		padding-left: 0;
-	}
-}
+
+
 
 .main__content-title {
 	font-size: 18px;
