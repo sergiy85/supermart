@@ -129,6 +129,27 @@
 			displayControls: false
 		});
 
+		// owl-Slider-sidebar
+
+
+        $('#slider-1').owlCarousel({
+            items:1,
+            nav:true,
+            loop:true,
+        });
+        $('#slider-2').owlCarousel({
+            items:1,
+            lazyLoad:true,
+            loop:true,
+        });
+        $('#brandSlider').owlCarousel({
+            items:6,
+            nav:true,
+            lazyLoad:true,
+            loop:true,
+        }); 
+    
+
 		/////////////slider pgwslideshow/////
 	});// end ready
 
