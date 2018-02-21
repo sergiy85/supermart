@@ -15,17 +15,12 @@
 @import 'app/sass/_footer';
 @import 'app/sass/_contact';
 
-
 $font_family: 'Raleway' , 'Roboto', sans-serif , 'FontAwesome';
-
-
 * ,
 *:before ,
 *:after {
 	box-sizing: border-box;
 }
-
-
 body {
 	@include reset();
 	font: 16px/18px $font_family;
@@ -35,12 +30,9 @@ body {
 	display: flex;
     flex-flow: column nowrap;
 }
-
-
 .container {
 	@include wrapper();
 }
-
 .main {
 	 flex: 1 0 auto;
 }
