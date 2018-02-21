@@ -8,9 +8,12 @@
 @import 'app/sass/_header';
 @import 'app/sass/_elements';
 @import 'app/sass/_flags';
-@import 'app/sass/_section-category';
+@import 'app/sass/_section-top-slider';
+@import 'app/sass/_category-menu';
+@import 'app/sass/_shop-product';
 
-$font_family: 'Poppins' , 'Roboto', sans-serif , 'FontAwesome';
+
+$font_family: 'Raleway' , 'Roboto', sans-serif , 'FontAwesome';
 
 
 * ,
@@ -25,6 +28,7 @@ body {
 	font: 16px/18px $font_family;
 	background-color: white;
 	margin: 0;
+	
 	display: flex;
     flex-flow: column nowrap;
 }

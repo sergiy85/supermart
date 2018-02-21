@@ -40,6 +40,24 @@
 		});
 		///////////////////////
 
+
+		////////LANGUAGE MENU/////////////
+		$('.language-menu-list').click(function(){
+			$(this).toggleClass('open');
+		})
+
+		$('.language-menu-list .language-menu__item').click(function(){
+			var setLang = $('.language-menu-list').data('location'),
+		    	dataLangSelect = $(this).data('lang')
+					$('.language-menu-list').data('location', dataLangSelect);
+					$('.language-menu-list .language-menu__item').removeClass('active');
+					$(this).toggleClass('active');
+		})
+
+		////////LANGUAGE MENU/////////////
+
+
+
 		////////////////currensy menu///////////
 		$.fn.currensy = function() {
 			// начальные параметры
@@ -82,59 +100,36 @@
 		};
 		$('selector').currensy();
 
-		$.fn.currensyLanuage = function() {
-			// начальные параметры
-			// задаем стандартную высоту div'a. 
-			var selectDefaultHeight = $('#currensy-lanuage').height();
-			// угол поворота изображения в div'e 
-			var rotateDefault = "rotate(0deg)";
-
-			// после нажатия кнопки срабатывает функция, в которой 
-			// вычисляется исходная высота нашего div'a. 
-			// очень удобно для сравнения с входящими параметрами (то, что задается в начале скрипта) 
-			$('#currensy-lanuage > .currensy-tag-lanuage').click(function() {
-			// вычисление высоты объекта методом height() 
-			var currentHeight = $('#currensy-lanuage').height();
-			// проверка условия на совпадение/не совпадение с заданной высотой вначале,
-			// чтобы понять. что делать дальше. 
-			if (currentHeight < 100 || currentHeight == selectDefaultHeight) {
-			// если высота блока не менялась и равна высоте, заданной по умолчанию,
-			// тогда мы открываем список и выбираем нужный элемент.
-			$('#currensy-lanuage').height("150px");  // «точка остановки анимации»
-			// здесь стилизуем нашу стрелку и делаем анимацию средствами CSS3 
-			$('.currensy__icon-lanuage').css({borderRadius: "1000px", transition: ".2s", transform: "rotate(180deg)"});
-			}
-			// иначе если список развернут (высота больше или равна 250 пикселям), 
-			// то при нажатии на абзац с классом valueTag, сворачиваем наш список и
-			// и присваиваем блоку первоначальную высоту + поворот стрелки в начальное положение
-			if (currentHeight >= 100) {
-			$('#currensy-lanuage').height(selectDefaultHeight);
-			$('.currensy__icon-lanuage').css({transform: rotateDefault});
-			}
-			});
-
-			// так же сворачиваем список при выборе нужного элемента 
-			// и меняем текст абзаца на текст элемента в списке
-			$('li.option-lanuage').click(function() {
-			$('#currensy-lanuage').height(selectDefaultHeight);
-			$('img.arrow').css({transform: rotateDefault});
-			$('.currensy-tag-lanuage').text($(this).text());
-			});
-		};
-		$('selector').currensyLanuage();
-
-
-
 
 		////////////////currensy menu///////////
-			$('.popup-content').magnificPopup({
-	        	type: 'inline'
-	    	});
+
+		/////////MODAL OKNO/////////////
+		$('.popup-content').magnificPopup({
+        	type: 'inline'
+    	});
+		/////////MODAL OKNO/////////////
 
 
-		
 
+		////////slider swiper////////////
+		 var swiper = new Swiper('.swiper-container', {
+			spaceBetween: 30,
+			loop: true,                  
+			loopFillGroupWithBlank: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+	      	},
+	    });
 
+		/////////////slider pgwslideshow/////
+		$('.pgwSlideshow').pgwSlideshow({
+			autoSlide: true,
+			maxHeight: 800,
+			displayControls: false
+		});
+
+		/////////////slider pgwslideshow/////
 	});// end ready
 
 })( jQuery );
