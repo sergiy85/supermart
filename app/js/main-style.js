@@ -135,7 +135,7 @@
 					slidesPerView: 1
 				}
 			},
-			spaceBetween: 20,
+			spaceBetween: 0,
 			slidesPerGroup: 1,
 			loop: true,
 			loopFillGroupWithBlank: true,
@@ -151,6 +151,34 @@
 	 	
 
 	 	var swiper3 = new Swiper('.mega-slideshow-container', {
+			slidesPerView: 2,
+			breakpoints: {
+				993: {
+					slidesPerView: 2
+				},
+				769: {
+					slidesPerView: 1
+				},
+				577: {
+					slidesPerView: 1
+				}
+			},
+			spaceBetween: 0,
+			slidesPerGroup: 1,
+			loop: true,
+			loopFillGroupWithBlank: true,
+			pagination: {
+			
+			clickable: true,
+			},
+			navigation: {
+			nextEl: '.swiper-button-next1',
+			prevEl: '.swiper-button-prev1',
+			},
+		});
+
+
+	 	var swiperFeatured = new Swiper('.featured-slideshow-container', {
 			slidesPerView: 3,
 			breakpoints: {
 				993: {
@@ -172,11 +200,10 @@
 			clickable: true,
 			},
 			navigation: {
-			nextEl: '.swiper-button-next1',
-			prevEl: '.swiper-button-prev1',
+			nextEl: '.swiper-button-next2',
+			prevEl: '.swiper-button-prev2',
 			},
 		});
-
 
 		/////////////slider pgwslideshow/////
 		$('.pgwSlideshow').pgwSlideshow({
