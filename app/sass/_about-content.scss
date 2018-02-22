@@ -269,7 +269,7 @@
   @include size-xs(12);
     display: block;
     opacity: 1;
-    -moz-overflow: hidden;
+     -moz-overflow: hidden;
     -webkit-overflow: hidden;
 }
 .team-item:hover .team__img--img{
@@ -322,11 +322,8 @@
 }
 .team__social-link{
   margin: 30px 5px;
-<<<<<<< HEAD
   font-size: 25px;
   display: flex;
   justify-content: center;
   text-decoration: none;
-=======
->>>>>>> upstream/master
 }
