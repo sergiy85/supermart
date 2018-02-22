@@ -105,50 +105,85 @@
 	top: 20%;
 }
 
+
+.form-sing {
+	display: flex;
+	flex-direction: column;
+}
 .form-account__title {
+	@include col();
+	@include size(12);
+	padding: 20px 0;
 	font-size: 24px;
 	line-height: 26px;
-	padding-left: 35px;
-	background: url(../img/key.png) no-repeat center left;
 }
 
 .form-account__subtitle {
+	@include col();
+	@include size(12);
+
 	font-size: 13px;
 	line-height: 22px;
-	color: #7a7b7f;
-	margin: 30px 0;
+	color: #777;
+	padding: 30px 0;
 }
-.form-account__link {
+.form-sing__link{
 	text-decoration: none;
-	color: red;
-}
-.form-account__link:hover {
-	color: green;
+	color: $color-yellow;
+	transition: color .3s ease;
+	&:hover {
+		color: $color-blue;
+	}
 }
 
 
-.form-wrap {
-	display: flex;
+
+.form-sing--wrap {
+	@include row-flex();
 	.form-wrap--col {
-		width: 50%;
+		@include col();
+		@include size(6);
+		@include size-xs(12);
 	}
 	.form-wrap--col:first-child {
 		margin-right: 15px;
 	}
 }
+.form-sing__label {
+	@include col();
+	@include size(12);
+}
 .form-sing__input {
+
 	width: 100%;
 	border: none;
+	border: 1px solid #777;
+	border-radius: 2px;
 	padding: 15px;
 	margin-bottom: 15px;
 }
 .form-sing__input::placeholder {
 	font-size: 12px;
 }
-.button-wrap {
+.form-sing-button-wrap {
+	@include col();
+	@include size(6);
+	display: flex;
+	align-items: center;
 	padding: 2px 0;
 }
-
+.form__checkbox {
+	margin-left: 10px;
+}
+.btn--submit {
+	background: $color-yellow;
+	border: none;
+	border-radius: 2px;
+	transition: background .3s ease;
+	&:hover {
+		background: $color-blue;
+	}
+}
 
 /////////////////////////////
 
