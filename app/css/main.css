@@ -3591,6 +3591,97 @@ h3 {
   background-color: grey;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #222222;
+}
+
+.product-categories__title {
+  font-family: 'ralewaybold';
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
+  padding: 48px 0 27px 0;
+}
+
+.product-categories__list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 0;
+}
+
+.product-categories__item {
+  border: 1px solid #e8e8e8;
+  background-color: #fcfcfc;
+  width: 114px;
+  position: relative;
+}
+
+.product-categories__item:not(:last-child) {
+  border-right: none;
+}
+
+.product-categories__link {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 24px;
+  text-align: center;
+  font-size: 31px;
+}
+
+.product-categories__link > span {
+  display: block;
+}
+
+.product-categories__item:before,
+.product-categories__item:after {
+  content: '';
+  height: 3px;
+  text-decoration: overline;
+  position: absolute;
+  background-color: #408de4;
+  top: 0;
+  width: 0;
+}
+
+.product-categories__item:hover:before,
+.product-categories__item:hover:after {
+  width: 100%;
+}
+
+.active:before,
+.active:after {
+  width: 100%;
+}
+
+.sub-title {
+  font-family: 'robotoregular';
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
 *,
 *:before,
 *:after {
@@ -4178,6 +4269,13 @@ body img {
   .main__header-item:first-child {
     width: 100%;
     padding-bottom: 15px;
+  }
+
+  .product-categories__list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .container {
