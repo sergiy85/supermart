@@ -4,3 +4,29 @@
 	text-transform: uppercase;
 	cursor: pointer;
 }
+/* **************raiting-list */
+.card__rating {
+	display: flex;
+	justify-content: center;
+}
+.rating-list {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	background: url(../img/stars.png);
+	height: 12px;
+	width: 60px;
+	margin-bottom:0 0 30px 0;
+	position: relative;
+
+}
+.rating-list__item {
+	height: 12px;
+	transition: color .3s aese;
+	&:hover {
+		color: $color-yellow;
+	}
+}
+.rating-list__item.active{
+	color: $color-yellow;
+}

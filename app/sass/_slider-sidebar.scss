@@ -1,13 +1,18 @@
-
+.main-content-sidebar {
+	@include row-flex();
+}
 .sidebar-slider {
 	@include row-flex();
+	@include col();
+	@include size(3);
+	@media screen and (max-width: 993px) {
+		display: none;
+	}
 }
 
 .slider-wrap {
-	@include col();
-	@include size(3);
-
-	width: 265px;
+	
+	width: 100%;
 	border: 1px solid #e5e5e5;
 	border-radius: 1px;
 }
@@ -252,7 +257,10 @@
 *brandSlider---------------------------------------------------------------------
 *
 */
-
+.section-brand-slider {
+	display: flex;
+	justify-content: center;
+}
 .brandSlider-wrap {
 	margin-top: 30px;
 	@include col();

@@ -10,7 +10,7 @@
 		});
 		///// menu_state_open////////////
 		
-
+ 
 
 		////////////togle menu
 		var o = $('.toggle');
@@ -111,8 +111,8 @@
 
 
 
-		////////slider swiper////////////
-		 var swiper = new Swiper('.swiper-container', {
+		//////slider swiper////////////
+	 	var swiper = new Swiper('.swiper-container', {
 			spaceBetween: 30,
 			loop: true,                  
 			loopFillGroupWithBlank: true,
@@ -121,6 +121,62 @@
 				clickable: true,
 	      	},
 	    });
+
+ 		var swiper2 = new Swiper('.slideshow-container', {
+			slidesPerView: 3,
+			breakpoints: {
+				993: {
+					slidesPerView: 3
+				},
+				769: {
+					slidesPerView: 2
+				},
+				577: {
+					slidesPerView: 1
+				}
+			},
+			spaceBetween: 20,
+			slidesPerGroup: 1,
+			loop: true,
+			loopFillGroupWithBlank: true,
+			pagination: {
+			
+			clickable: true,
+			},
+			navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+			},
+		});
+	 	
+
+	 	var swiper3 = new Swiper('.mega-slideshow-container', {
+			slidesPerView: 3,
+			breakpoints: {
+				993: {
+					slidesPerView: 3
+				},
+				769: {
+					slidesPerView: 2
+				},
+				577: {
+					slidesPerView: 1
+				}
+			},
+			spaceBetween: 0,
+			slidesPerGroup: 1,
+			loop: true,
+			loopFillGroupWithBlank: true,
+			pagination: {
+			
+			clickable: true,
+			},
+			navigation: {
+			nextEl: '.swiper-button-next1',
+			prevEl: '.swiper-button-prev1',
+			},
+		});
+
 
 		/////////////slider pgwslideshow/////
 		$('.pgwSlideshow').pgwSlideshow({
