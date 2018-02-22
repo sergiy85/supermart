@@ -23,84 +23,7 @@
                         <a href="#form-account-sing" class="navbar__link popup-content">
                         signup
                         </a>
-                        <div id="form-account-login" class="white-popup mfp-hide">
-                            <div class="form-account-sing">
-                                <div class="form-account__content">
-                                    <h2 class="form-account__title">Login account</h2>
-
-                                    <form action="#" class="form-sing" id="form-login">
-                                        <label class="form-sing__label">
-                                            <input type="text" name="email " placeholder="Email address"  class="form-sing__input  form-control-login">
-                                        </label>
-
-                                        <label class="form-sing__label">
-                                            <input type="password" name="password" placeholder="Password"  class="form-sing__input  form-control-password">
-                                        </label>
-
-                                        <div class="form-sing-button-wrap">
-                                            <button type="submit" class="btn btn--top btn--submit" for="form-sing">login
-                                            </button>
-                                            <input type="checkbox" class="form__checkbox">
-                                        </div>
-
-                                        <p class="form-account__subtitle">lost your password?
-                                            
-                                        </p>
-                                        
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                         <div id="form-account-sing" class="white-popup mfp-hide">
-                            <div class="form-account-sing">
-                                <div class="form-account__content">
-                                    <h2 class="form-account__title">Create your free account</h2>
-
-                                    <p class="form-account__subtitle">Come and join our cool and amazing community, fill in your details to get started. Already have an account? 
-                                        <span><a href="#" class="form-sing__link">Log in.</a></span>
-                                    </p>
-                                    
-                                    <form action="#" class="form-sing" id="form-sing">
-                                        <div class="form-sing--wrap">
-                                            <div class="form-wrap--col">
-                                                <label>
-                                                    <input type="text" name="first-name" placeholder="First name"  class="form-sing__input form-control-login">
-                                                </label>
-                                            </div>
-                                            <div class="form-wrap--col">
-                                                <label>
-                                                    <input type="text" name="last-name" placeholder="Last name"  class="form-sing__input  form-control-password">
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <label class="form-sing__label">
-                                            <input type="text" name="email " placeholder="Email address"  class="form-sing__input  form-control-login">
-                                        </label>
-
-                                        <label class="form-sing__label">
-                                            <input type="password" name="password" placeholder="Password"  class="form-sing__input  form-control-password">
-                                        </label>
-
-                                        <div class="form-sing-button-wrap">
-                                            <button type="submit" class="btn btn--top btn--submit" for="form-sing">Sign up for free
-                                            </button>
-                                        </div>
-
-                                        <p class="form-account__subtitle">By clicking on “Sign up for free”, you agree to the 
-                                            <span>
-                                                <a href="#" class="form-sing__link">Terms of Service</a>
-                                            </span>
-                                             and the
-                                            <span>
-                                                <a href="#" class="form-sing__link">Privacy Policy</a>
-                                            </span>
-                                        </p>
-                                        
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="navbar-menu">
                          <ul class="language-menu-list"> 
@@ -124,7 +47,7 @@
                     <div class="navbar-menu navbar-menu-money">
                         <div id="currensy" class="currensy">
                             <i class="fa fa-sort-desc currensy__icon " aria-hidden="true"></i>
-                            <p class="currensy-tag" name=select>usd</p>
+                            <p class="currensy-tag" >usd</p>
                             <ul id="currensy-list" class="currensy-list">
                                 <li class="option">usd</li>
                                 <li class="option">eur</li>
@@ -156,7 +79,7 @@
                         <form class="search-form">
                             <input id="search-form" type="text" placeholder="search..." class="search-form__input">
                             <select name="year" class="search-form__select">
-                                <option value="2000"><span><i class="flag flag-gb"></i></span>all categories</option>
+                                <option value="2000">all categories</option>
                                 <option value="2001">mobile</option>
                                 <option value="2001">sports</option>
                                 <option value="2001">foods</option>
@@ -297,7 +220,7 @@
                                 <a href="#" class="main-menu__link toggle">features</a>
                             </li>
                             <li class="main-menu__item btn-group toggle-wrap">
-                                <a href="#" class="main-menu__link toggle">blog</a>
+                                <a href="blog.html" class="main-menu__link toggle">blog</a>
                             </li>
                         </ul>
                         <div class="call-us">
@@ -351,19 +274,42 @@
                  <!-- slider swiper -->
             </div>
         </section>
-        
-        <section class="sidebar-slider container">
-            
-            <div class="slider-wrap">
-                <h3 class="slider__title--wrap slider-1">Recent News</h3>
-                <div id="slider-1" class="owl-carousel owl-theme">
-                    <div>
+                
+        <section class="main-content-sidebar container">
+            <section class="sidebar-slider">
+                <div class="slider-wrap">
+                    <h3 class="slider__title--wrap slider-1">Recent News</h3>
+                    <div id="slider-1" class="owl-carousel owl-theme">
+                        <div>
+                            <div class="slider__inner">
+                                <figure class="slider__image">
+                                    <img src="img/aside_slider.jpg" alt="image-slider">
+                                    <figcaption class="slider__data">
+                                        <time datetime="2018-12-24" class="slider__data--wrap">
+                                            <span class="slider__data--day">24</span>
+                                            <span class="slider__data--month">dec</span>
+                                        </time>
+                                    </figcaption>
+                                </figure>
+                                <h3 class="slider__title">New Blog Post Title Here</h3>
+                                <a class="slider__title--fasion" href="#">In fashion</a>
+                                <a class="slider__title--comment" href="#">No Comments</a>
+                                <p class="slider__descr">The Love Boat soon will making another the Love Boating...</p>
+                                <a href="#" class="slider__link">Continue reading</a>
+                            </div>
+                        </div>
+                        
+
                         <div class="slider__inner">
                             <figure class="slider__image">
                                 <img src="img/aside_slider.jpg" alt="image-slider">
                                 <figcaption class="slider__data">
                                     <time datetime="2018-12-24" class="slider__data--wrap">
-                                        <span class="slider__data--day">24</span>
+
+                                      
+
+                                        <span class="slider__data--day">31</span>
+
                                         <span class="slider__data--month">dec</span>
                                     </time>
                                 </figcaption>
@@ -375,389 +321,1199 @@
                             <a href="#" class="slider__link">Continue reading</a>
                         </div>
                     </div>
+
+                   
                     
-                    <div class="slider__inner">
-                        <figure class="slider__image">
-                            <img src="img/aside_slider.jpg" alt="image-slider">
-                            <figcaption class="slider__data">
-                                <time datetime="2018-12-24" class="slider__data--wrap">
-                                    <span class="slider__data--day">31</span>
-                                    <span class="slider__data--month">dec</span>
-                                </time>
-                            </figcaption>
-                        </figure>
-                        <h3 class="slider__title">New Blog Post Title Here</h3>
-                        <a class="slider__title--fasion" href="#">In fashion</a>
-                        <a class="slider__title--comment" href="#">No Comments</a>
-                        <p class="slider__descr">The Love Boat soon will making another the Love Boating...</p>
-                        <a href="#" class="slider__link">Continue reading</a>
+                <div class="slider-wrap slider-2">
+                    <h3 class="slider__title--wrap slider-2">Testimonials</h3>
+                    <div id="slider-2" class="owl-carousel owl-theme">
+                        
+                        <div class="slider__inner slider-container">
+                            <p class="slider__descr slider-2">Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
+                            <figure class="slider__image slider-2">
+                                <img src="img/chrle.png" alt="foto">
+                                 <figcaption class="slider__img-descr">
+                                    <span class="slider__person-name">Chrle Benson</span>
+                                    <span class="slider__position">Lead designer</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        
+                        <div class="slider__inner slider-container">
+                            <p class="slider__descr">Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
+                            <figure class="slider__image slider-2">
+                                <img src="img/chrle.png" alt="foto">
+                                 <figcaption class="slider__img-descr">
+                                    <span class="slider__person-name">Dylan McRay</span>
+                                    <span class="slider__position">Lead designer</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+            
+            
+                        <div class="slider__inner slider-container">
+                            <p class="slider__descr">Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
+                            <figure class="slider__image slider-2">
+                                <img src="img/chrle.png" alt="foto">
+                                 <figcaption class="slider__img-descr">
+                                    <span class="slider__person-name">Dylan McRay</span>
+                                    <span class="slider__position">Lead designer</span>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="slider-wrap slider-2">
-                <h3 class="slider__title--wrap slider-2">Testimonials</h3>
-                <div id="slider-2" class="owl-carousel owl-theme">
-                    
-                    <div class="slider__inner slider-container">
-                        <p class="slider__descr slider-2">Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
-                        <figure class="slider__image slider-2">
-                            <img src="img/chrle.png" alt="foto">
-                             <figcaption class="slider__img-descr">
-                                <span class="slider__person-name">Chrle Benson</span>
-                                <span class="slider__position">Lead designer</span>
-                            </figcaption>
-                        </figure>
+               
+            </section>
+            <section class="section-main-content">
+                <section class="slidshow-product ">
+                    <h2 class="slidshow-produc__title">
+                    new arrivals
+                    </h2>
+                    <div class="slider--wrapper">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="slideshow-container ">
+                            <ul class="product-list swiper-wrapper ">
+                                <li class="product-items swiper-slide">
+                                    <div class="product-items__box">
+                                        <div class="product-items__header">
+                                          <span class="product-items__new">new</span>
+                                           <span class="product-items__sale">sale</span>
+                                        </div>
+                                        <img class="product-items__img first" src="img/img-cart/product-1.png" alt="foto">
+                                        <img class="product-items__img second" src="img/img-cart/product-2.png" alt="foto">
+                                        <div class="social-box">
+                                            <ul class="social-list">
+                                                <li class="social__item">
+                                                    <a href="#" class="social__link">
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                    </a>        
+                                                </li>
+                                                <li class="social__item">
+                                                    <a href="#" class="social__link">
+                                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                    </a>        
+                                                </li>
+                                                <li class="social__item">
+                                                    <a href="#" class="social__link">
+                                                        <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                                                    </a>        
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <div class="caption__name">
+                                            <a href="#" class="caption__link">AWE Tuning MQB Volkswagen Golf 7 R GTI Audi A3 S3 2.0 1.8</a>
+                                        </div>
+                                        <div class="caption__price">
+                                            <span class="price-old">$50.00</span>
+                                        </div>
+                                        <div class="card__rating">
+                                            <ul class="rating-list">
+                                                <li class="rating-list__item active">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item active">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item active">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item ">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item ">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                 <li class="product-items swiper-slide">
+                                    <div class="product-items__box">
+                                        <div class="product-items__header">
+                                          <span class="product-items__sale">sale</span>
+                                        </div>
+                                        <img class="product-items__img first" src="img/img-cart/product-1.png" alt="foto">
+                                        <img class="product-items__img second" src="img/img-cart/product-2.png" alt="foto">
+                                        <div class="social-box">
+                                            <ul class="social-list">
+                                                <li class="social__item">
+                                                    <a href="#" class="social__link">
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                    </a>        
+                                                </li>
+                                                <li class="social__item">
+                                                    <a href="#" class="social__link">
+                                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                    </a>        
+                                                </li>
+                                                <li class="social__item">
+                                                    <a href="#" class="social__link">
+                                                        <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                                                    </a>        
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <div class="caption__name">
+                                            <a href="#" class="caption__link">AWE Tuning MQB Volkswagen Golf 7 R GTI Audi A3 S3 2.0 1.8</a>
+                                        </div>
+                                        <div class="caption__price">
+                                            <span class="price-old">$50.00</span>
+                                        </div>
+                                         <div class="card__rating">
+                                            <ul class="rating-list">
+                                                <li class="rating-list__item active">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item active">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item active">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item ">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item ">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                 <li class="product-items swiper-slide">
+                                    <div class="product-items__box">
+                                        <div class="product-items__header">
+                                          <span class="product-items__new">new</span>
+                                        </div>
+                                        <img class="product-items__img first" src="img/img-cart/product-1.png" alt="foto">
+                                        <img class="product-items__img second" src="img/img-cart/product-2.png" alt="foto">
+                                        <div class="social-box">
+                                            <ul class="social-list">
+                                                <li class="social__item">
+                                                    <a href="#" class="social__link">
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                    </a>        
+                                                </li>
+                                                <li class="social__item">
+                                                    <a href="#" class="social__link">
+                                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                    </a>        
+                                                </li>
+                                                <li class="social__item">
+                                                    <a href="#" class="social__link">
+                                                        <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                                                    </a>        
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <div class="caption__name">
+                                            <a href="#" class="caption__link">AWE Tuning MQB Volkswagen Golf 7 R GTI Audi A3 S3 2.0 1.8</a>
+                                        </div>
+                                        <div class="caption__price">
+                                            <span class="price-old">$50.00</span>
+                                        </div>
+                                         <div class="card__rating">
+                                            <ul class="rating-list">
+                                                <li class="rating-list__item active">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item active">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item active">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item ">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item ">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                 <li class="product-items swiper-slide">
+                                    <div class="product-items__box">
+                                        <div class="product-items__header">
+                                          <span class="product-items__new">new</span>
+                                        </div>
+                                        <img class="product-items__img first" src="img/img-cart/product-1.png" alt="foto">
+                                        <img class="product-items__img second" src="img/img-cart/product-2.png" alt="foto">
+                                        <div class="social-box">
+                                            <ul class="social-list">
+                                                <li class="social__item">
+                                                    <a href="#" class="social__link">
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                    </a>        
+                                                </li>
+                                                <li class="social__item">
+                                                    <a href="#" class="social__link">
+                                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                    </a>        
+                                                </li>
+                                                <li class="social__item">
+                                                    <a href="#" class="social__link">
+                                                        <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                                                    </a>        
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <div class="caption__name">
+                                            <a href="#" class="caption__link">AWE Tuning MQB Volkswagen Golf 7 R GTI Audi A3 S3 2.0 1.8</a>
+                                        </div>
+                                        <div class="caption__price">
+                                            <span class="price-old">$50.00</span>
+                                        </div>
+                                         <div class="card__rating">
+                                            <ul class="rating-list">
+                                                <li class="rating-list__item active">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item active">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item active">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item ">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                                 <li class="rating-list__item ">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                       
+                            </ul>
+                        </div>
                     </div>
-                    
-                    <div class="slider__inner slider-container">
-                        <p class="slider__descr">Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
-                        <figure class="slider__image slider-2">
-                            <img src="img/chrle.png" alt="foto">
-                             <figcaption class="slider__img-descr">
-                                <span class="slider__person-name">Dylan McRay</span>
-                                <span class="slider__position">Lead designer</span>
-                            </figcaption>
-                        </figure>
+                </section>
+                <section class="slidshow-product-mega ">
+                    <h2 class="slidshow-produc__title">
+                    new arrivals
+                    </h2>
+                    <div class="slider--wrapper">
+                        <div class="swiper-button-next1"></div>
+                        <div class="swiper-button-prev1"></div>
+                        <div class="mega-slideshow-container ">
+                            
+                            <ul class="product-list swiper-wrapper ">
+                               <li class="slider-itemss swiper-slide">
+                                    <ul class="product-list2"> 
+                                        <li class="product-items swiper-slide">
+                                            <div class="product-items__box">
+                                                <div class="product-items__header">
+                                                  <span class="product-items__new">new</span>
+                                                   <span class="product-items__sale">sale</span>
+                                                </div>
+                                                <img class="product-items__img first" src="img/img-cart/product-1.png" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/product-2.png" alt="foto">
+                                                <div class="social-box">
+                                                    <ul class="social-list">
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <div class="caption__name">
+                                                    <a href="#" class="caption__link">AWE Tuning MQB Volkswagen Golf 7 R GTI Audi A3 S3 2.0 1.8</a>
+                                                </div>
+                                                <div class="caption__price">
+                                                    <span class="price-old">$50.00</span>
+                                                </div>
+                                                <div class="card__rating">
+                                                    <ul class="rating-list">
+                                                        <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="product-items swiper-slide">
+                                            <div class="product-items__box">
+                                                <div class="product-items__header">
+                                                  <span class="product-items__sale">sale</span>
+                                                </div>
+                                                <img class="product-items__img first" src="img/img-cart/product-1.png" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/product-2.png" alt="foto">
+                                                <div class="social-box">
+                                                    <ul class="social-list">
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <div class="caption__name">
+                                                    <a href="#" class="caption__link">AWE Tuning MQB Volkswagen Golf 7 R GTI Audi A3 S3 2.0 1.8</a>
+                                                </div>
+                                                <div class="caption__price">
+                                                    <span class="price-old">$50.00</span>
+                                                </div>
+                                                 <div class="card__rating">
+                                                    <ul class="rating-list">
+                                                        <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <li class="product-items swiper-slide">
+                                            <div class="product-items__box">
+                                                <div class="product-items__header">
+                                                  <span class="product-items__new">new</span>
+                                                </div>
+                                                <img class="product-items__img first" src="img/img-cart/product-1.png" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/product-2.png" alt="foto">
+                                                <div class="social-box">
+                                                    <ul class="social-list">
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <div class="caption__name">
+                                                    <a href="#" class="caption__link">AWE Tuning MQB Volkswagen Golf 7 R GTI Audi A3 S3 2.0 1.8</a>
+                                                </div>
+                                                <div class="caption__price">
+                                                    <span class="price-old">$50.00</span>
+                                                </div>
+                                                 <div class="card__rating">
+                                                    <ul class="rating-list">
+                                                        <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="slider-itemss swiper-slide">
+                                    <ul class="product-list2"> 
+                                        <li class="product-items swiper-slide">
+                                            <div class="product-items__box">
+                                                <div class="product-items__header">
+                                                  <span class="product-items__new">new</span>
+                                                   <span class="product-items__sale">sale</span>
+                                                </div>
+                                                <img class="product-items__img first" src="img/img-cart/product-1.png" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/product-2.png" alt="foto">
+                                                <div class="social-box">
+                                                    <ul class="social-list">
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <div class="caption__name">
+                                                    <a href="#" class="caption__link">AWE Tuning MQB Volkswagen Golf 7 R GTI Audi A3 S3 2.0 1.8</a>
+                                                </div>
+                                                <div class="caption__price">
+                                                    <span class="price-old">$50.00</span>
+                                                </div>
+                                                <div class="card__rating">
+                                                    <ul class="rating-list">
+                                                        <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="product-items swiper-slide">
+                                            <div class="product-items__box">
+                                                <div class="product-items__header">
+                                                  <span class="product-items__sale">sale</span>
+                                                </div>
+                                                <img class="product-items__img first" src="img/img-cart/product-1.png" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/product-2.png" alt="foto">
+                                                <div class="social-box">
+                                                    <ul class="social-list">
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <div class="caption__name">
+                                                    <a href="#" class="caption__link">AWE Tuning MQB Volkswagen Golf 7 R GTI Audi A3 S3 2.0 1.8</a>
+                                                </div>
+                                                <div class="caption__price">
+                                                    <span class="price-old">$50.00</span>
+                                                </div>
+                                                 <div class="card__rating">
+                                                    <ul class="rating-list">
+                                                        <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <li class="product-items swiper-slide">
+                                            <div class="product-items__box">
+                                                <div class="product-items__header">
+                                                  <span class="product-items__new">new</span>
+                                                </div>
+                                                <img class="product-items__img first" src="img/img-cart/product-1.png" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/product-2.png" alt="foto">
+                                                <div class="social-box">
+                                                    <ul class="social-list">
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <div class="caption__name">
+                                                    <a href="#" class="caption__link">AWE Tuning MQB Volkswagen Golf 7 R GTI Audi A3 S3 2.0 1.8</a>
+                                                </div>
+                                                <div class="caption__price">
+                                                    <span class="price-old">$50.00</span>
+                                                </div>
+                                                 <div class="card__rating">
+                                                    <ul class="rating-list">
+                                                        <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                 <li class="slider-itemss swiper-slide">
+                                    <ul class="product-list2"> 
+                                        <li class="product-items swiper-slide">
+                                            <div class="product-items__box">
+                                                <div class="product-items__header">
+                                                  <span class="product-items__new">new</span>
+                                                   <span class="product-items__sale">sale</span>
+                                                </div>
+                                                <img class="product-items__img first" src="img/img-cart/product-1.png" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/product-2.png" alt="foto">
+                                                <div class="social-box">
+                                                    <ul class="social-list">
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <div class="caption__name">
+                                                    <a href="#" class="caption__link">AWE Tuning MQB Volkswagen Golf 7 R GTI Audi A3 S3 2.0 1.8</a>
+                                                </div>
+                                                <div class="caption__price">
+                                                    <span class="price-old">$50.00</span>
+                                                </div>
+                                                <div class="card__rating">
+                                                    <ul class="rating-list">
+                                                        <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="product-items swiper-slide">
+                                            <div class="product-items__box">
+                                                <div class="product-items__header">
+                                                  <span class="product-items__sale">sale</span>
+                                                </div>
+                                                <img class="product-items__img first" src="img/img-cart/product-1.png" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/product-2.png" alt="foto">
+                                                <div class="social-box">
+                                                    <ul class="social-list">
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <div class="caption__name">
+                                                    <a href="#" class="caption__link">AWE Tuning MQB Volkswagen Golf 7 R GTI Audi A3 S3 2.0 1.8</a>
+                                                </div>
+                                                <div class="caption__price">
+                                                    <span class="price-old">$50.00</span>
+                                                </div>
+                                                 <div class="card__rating">
+                                                    <ul class="rating-list">
+                                                        <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <li class="product-items swiper-slide">
+                                            <div class="product-items__box">
+                                                <div class="product-items__header">
+                                                  <span class="product-items__new">new</span>
+                                                </div>
+                                                <img class="product-items__img first" src="img/img-cart/product-1.png" alt="foto">
+                                                <img class="product-items__img second" src="img/img-cart/product-2.png" alt="foto">
+                                                <div class="social-box">
+                                                    <ul class="social-list">
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                        <li class="social__item">
+                                                            <a href="#" class="social__link">
+                                                                <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                                                            </a>        
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="caption">
+                                                <div class="caption__name">
+                                                    <a href="#" class="caption__link">AWE Tuning MQB Volkswagen Golf 7 R GTI Audi A3 S3 2.0 1.8</a>
+                                                </div>
+                                                <div class="caption__price">
+                                                    <span class="price-old">$50.00</span>
+                                                </div>
+                                                 <div class="card__rating">
+                                                    <ul class="rating-list">
+                                                        <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item active">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                         <li class="rating-list__item ">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-
-
-                    <div class="slider__inner slider-container">
-                        <p class="slider__descr">Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
-                        <figure class="slider__image slider-2">
-                            <img src="img/chrle.png" alt="foto">
-                             <figcaption class="slider__img-descr">
-                                <span class="slider__person-name">Dylan McRay</span>
-                                <span class="slider__position">Lead designer</span>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-
-
-
-                    <div class="slider__inner slider-container">
-                        <p class="slider__descr">Black gold Makin' your way in the world today takes every thing you've got. Takin' a break from all your worries the some marry shop theme.</p>
-                        <figure class="slider__image slider-2">
-                            <img src="img/chrle.png" alt="foto">
-                             <figcaption class="slider__img-descr">
-                                <span class="slider__person-name">Dylan McRay</span>
-                                <span class="slider__position">Lead designer</span>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="brandSlider-wrap">
-            <h3 class="brandSlider__title slider-3">Brand Partners</h3>
-            <div id="brandSlider" class="owl-carousel owl-theme">
-                
-                <div class="brandSlider__container">
-                    <figure class="slider__brands">
-                        <a href="#">
-                            <img src="img/codespot.PNG" alt="foto">
-                        </a>
-                    </figure>
-                </div>
-
-                <div class="brandSlider__container">
-                    <figure class="slider__brands">
-                        <a href="#">
-                            <img src="img/branos.PNG" alt="foto">
-                        </a>
-                    </figure>
-                </div>
-
-                <div class="brandSlider__container">
-                    <figure class="slider__brands">
-                        <a href="#">
-                            <img src="img/codespot.PNG" alt="foto">
-                        </a>
-                    </figure>
-                </div>
-
-                <div class="brandSlider__container">
-                    <figure class="slider__brands">
-                        <a href="#">
-                            <img src="img/branos.PNG" alt="foto">
-                        </a>
-                    </figure>
-                </div>
-
-                <div class="brandSlider__container">
-                    <figure class="slider__brands">
-                        <a href="#">
-                            <img src="img/codespot.PNG" alt="codespot">
-                        </a>
-                    </figure>
-                </div>
-
-                <div class="brandSlider__container">
-                    <figure class="slider__brands">
-                        <a href="#">
-                            <img src="img/branos.PNG" alt="branos">
-                        </a>
-                    </figure>
-                </div>
-
-                <div class="brandSlider__container">
-                    <figure class="slider__brands">
-                        <a href="#">
-                            <img src="img/codespot.PNG" alt="codespot">
-                        </a>
-                    </figure>
-                </div>
-
-                <div class="brandSlider__container">
-                    <figure class="slider__brands">
-                        <a href="#">
-                            <img src="img/branos.PNG" alt="branos">
-                        </a>
-                    </figure>
-                </div>
-
-            </div>
-            </div>
+                </section>
+            </section>
         </section>
-       
+        <section class="section-brand-slider container">
+            <div class="brandSlider-wrap">
+                        <h3 class="brandSlider__title slider-3">Brand Partners</h3>
+                        <div id="brandSlider" class="owl-carousel owl-theme">
+                            
+                            <div class="brandSlider__container">
+                                <figure class="slider__brands">
+                                    <a href="#">
+                                        <img src="img/codespot.PNG" alt="foto">
+                                    </a>
+                                </figure>
+                            </div>
+                
+                            <div class="brandSlider__container">
+                                <figure class="slider__brands">
+                                    <a href="#">
+                                        <img src="img/branos.PNG" alt="foto">
+                                    </a>
+                                </figure>
+                            </div>
+                
+                            <div class="brandSlider__container">
+                                <figure class="slider__brands">
+                                    <a href="#">
+                                        <img src="img/codespot.PNG" alt="foto">
+                                    </a>
+                                </figure>
+                            </div>
+                
+                            <div class="brandSlider__container">
+                                <figure class="slider__brands">
+                                    <a href="#">
+                                        <img src="img/branos.PNG" alt="foto">
+                                    </a>
+                                </figure>
+                            </div>
+                
+                            <div class="brandSlider__container">
+                                <figure class="slider__brands">
+                                    <a href="#">
+                                        <img src="img/codespot.PNG" alt="codespot">
+                                    </a>
+                                </figure>
+                            </div>
+                
+                            <div class="brandSlider__container">
+                                <figure class="slider__brands">
+                                    <a href="#">
+                                        <img src="img/branos.PNG" alt="branos">
+                                    </a>
+                                </figure>
+                            </div>
+                
+                            <div class="brandSlider__container">
+                                <figure class="slider__brands">
+                                    <a href="#">
+                                        <img src="img/codespot.PNG" alt="codespot">
+                                    </a>
+                                </figure>
+                            </div>
+                
+                            <div class="brandSlider__container">
+                                <figure class="slider__brands">
+                                    <a href="#">
+                                        <img src="img/branos.PNG" alt="branos">
+                                    </a>
+                                </figure>
+                            </div>
+                
+                        </div>
+            </div> 
+        </section>
     </main>
-
-
 
 
 
     <footer class="main-footer">
                  <!-- four elements features-->
-            <div class="wrapper">
-                <div class="features__container container">
-                  <div class="wrap-paire">
-                    <ul class="features__list">
-                    
-                      <li class="features__items">
-                        <img src="img/freeshp.png" alt="" class="features__img">
-                        <h3 class="features__title">FREE SHIPPING</h3>
-                        <span class="features__descr">Free Shipping on World wide Order Over $99.</span>
-                      </li>
-                      <li class="features__items">
-                        <img src="img/trust.png" alt="" class="features__img">
-                        <h3 class="features__title">Trusted Pay</h3>
-                        <span class="features__descr">100% Payment Protection &amp;  Easy Return</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="wrap-paire">
-                    <ul class="features__list">
-                      <li class="features__items">
-                        <img src="img/payment.png" alt="" class="features__img">
-                        <h3 class="features__title">Secured Payment</h3>
-                        <span class="features__descr">All Major Credit &amp; Debit Cards Accepted</span>
-                      </li>
-                      <li class="features__items">
-                        <img src="img/shopapp.png" alt="" class="features__img">
-                        <h3 class="features__title">Shop on app</h3>
-                        <span class="features__descr">Just Dowload our App &amp; Shop  With Best Offers!</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+        <div class="wrapper">
+            <div class="features__container container">
+              <div class="wrap-paire">
+                <ul class="features__list">
+                
+                  <li class="features__items">
+                    <img src="img/freeshp.png" alt="" class="features__img">
+                    <h3 class="features__title">FREE SHIPPING</h3>
+                    <span class="features__descr">Free Shipping on World wide Order Over $99.</span>
+                  </li>
+                  <li class="features__items">
+                    <img src="img/trust.png" alt="" class="features__img">
+                    <h3 class="features__title">Trusted Pay</h3>
+                    <span class="features__descr">100% Payment Protection &amp;  Easy Return</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="wrap-paire">
+                <ul class="features__list">
+                  <li class="features__items">
+                    <img src="img/payment.png" alt="" class="features__img">
+                    <h3 class="features__title">Secured Payment</h3>
+                    <span class="features__descr">All Major Credit &amp; Debit Cards Accepted</span>
+                  </li>
+                  <li class="features__items">
+                    <img src="img/shopapp.png" alt="" class="features__img">
+                    <h3 class="features__title">Shop on app</h3>
+                    <span class="features__descr">Just Dowload our App &amp; Shop  With Best Offers!</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           <!-- ./four elements features-->
           <!-- section of subscribe -->
-        <div class="subscribe__wrapper">
-          <div class="subscribe__container container">
-            <div class="subscribe__section">
-              <ul class="subscribe__list-label">
-                <li class="list-label__item label-ico">
-                  <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                </li>
-                <li class="list-label__item">
-                  <label for="field">
-                    <span class="label-title">SIGNUP to NEWSLETTER</span>
-                  </label>
-                </li>
-              </ul>
-              <ul class="list-sbscr">
-                <li class="list-sbscr__item main-footer__form">
-                  <form action="#" class="form__subscr">
-                    <input type="email" id="field" placeholder="Enter Your Email Address" required>
-                  </form>
-                  <button type="submit" class="subscribe__btn" form="form__subscr">Submit</button>
-                </li>       
-              </ul>
+            <div class="subscribe__wrapper">
+              <div class="subscribe__container container">
+                <div class="subscribe__section">
+                  <ul class="subscribe__list-label">
+                    <li class="list-label__item label-ico">
+                      <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                    </li>
+                    <li class="list-label__item">
+                      <label for="field">
+                        <span class="label-title">SIGNUP to NEWSLETTER</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="list-sbscr">
+                    <li class="list-sbscr__item main-footer__form">
+                      <form action="#" class="form__subscr">
+                        <input type="email" id="field" placeholder="Enter Your Email Address" required>
+                      </form>
+                      <button type="submit" class="subscribe__btn" form="form__subscr">Submit</button>
+                    </li>       
+                  </ul>
+                </div>
+                <div class="social-container">
+                  <ul class="list-social">
+                    <li class="list-social__item wide">
+                      <span class="list-social__descr">Keep in touch</span>
+                    </li>
+                    <li class="list-social__item">
+                      <a href="#" class="social-link">
+                        <span class="soc-ico-wrap"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                      </a>
+                    </li>
+                    <li class="list-social__item">
+                      <a href="#" class="social-link">
+                        <span class="soc-ico-wrap"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                      </a>
+                    </li>
+                    <li class="list-social__item">
+                      <a href="#" class="social-link">
+                        <span class="soc-ico-wrap"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                      </a>
+                    </li>
+                    <li class="list-social__item">
+                      <a href="#" class="social-link">
+                        <span class="soc-ico-wrap"><i class="fa fa-pinterest" aria-hidden="true"></i></span>
+                      </a>
+                    </li>
+                    <li class="list-social-item">
+                      <a href="#" class="social-link">
+                        <span class="soc-ico-wrap"><i class="fa fa-vimeo" aria-hidden="true"></i></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="social-container">
-              <ul class="list-social">
-                <li class="list-social__item wide">
-                  <span class="list-social__descr">Keep in touch</span>
-                </li>
-                <li class="list-social__item">
-                  <a href="#" class="social-link">
-                    <span class="soc-ico-wrap"><i class="fa fa-twitter" aria-hidden="true"></i></span>
-                  </a>
-                </li>
-                <li class="list-social__item">
-                  <a href="#" class="social-link">
-                    <span class="soc-ico-wrap"><i class="fa fa-facebook" aria-hidden="true"></i></span>
-                  </a>
-                </li>
-                <li class="list-social__item">
-                  <a href="#" class="social-link">
-                    <span class="soc-ico-wrap"><i class="fa fa-instagram" aria-hidden="true"></i></span>
-                  </a>
-                </li>
-                <li class="list-social__item">
-                  <a href="#" class="social-link">
-                    <span class="soc-ico-wrap"><i class="fa fa-pinterest" aria-hidden="true"></i></span>
-                  </a>
-                </li>
-                <li class="list-social-item">
-                  <a href="#" class="social-link">
-                    <span class="soc-ico-wrap"><i class="fa fa-vimeo" aria-hidden="true"></i></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
           <!-- ./section of subscriber -->
           <!-- content of footer -->
-      <div class="footer__content-wrapper">
-        <div class="footer__content-container container">
-          <ul class="footer__content-list">
-            <li class="footer__content-item">
-              <address class="footer__address">
-                <ul class="inner-list">
-                  <li class="inner-list-item">
-                              <span class="footer__address-title">
-                                Supermart
-                            </span>
-                          </li>                         
+            <div class="footer__content-wrapper">
+                <div class="footer__content-container container">
+                    <ul class="footer__content-list">
+                        <li class="footer__content-item">
+                          <address class="footer__address">
+                            <ul class="inner-list">
                               <li class="inner-list-item">
-                                  <span class="footer__address-content">
-                                      Many say exploration is part of our dest but it’s actually our duty to future and their.
-                                  </span>
-                              </li>
-                              <li class="inner-list-item">
-                                  <span class="descr-title">Address:</span><span class="descr-content"> 868 Fake Street, New York</span>
-                              </li>
-                              <li class="inner-list-item">
-                                  <a href="tel:080847521499" class="footer__address-content">
-                                     <span class="descr-title"> Phone:</span> (08) 08 4752 1499
-                                  </a>
-                              </li>
-                              <li class="inner-list-item">
-                                  <a href="mailto:info@supermart.com" class="footer__address-content">
-                                     <span class="descr-title">Email:</span> info@supermart.com
-                                  </a>
-                              </li>
-                              
+                                          <span class="footer__address-title">
+                                            Supermart
+                                        </span>
+                                      </li>                         
+                                          <li class="inner-list-item">
+                                              <span class="footer__address-content">
+                                                  Many say exploration is part of our dest but it’s actually our duty to future and their.
+                                              </span>
+                                          </li>
+                                          <li class="inner-list-item">
+                                              <span class="descr-title">Address:</span><span class="descr-content"> 868 Fake Street, New York</span>
+                                          </li>
+                                          <li class="inner-list-item">
+                                              <a href="tel:080847521499" class="footer__address-content">
+                                                 <span class="descr-title"> Phone:</span> (08) 08 4752 1499
+                                              </a>
+                                          </li>
+                                          <li class="inner-list-item">
+                                              <a href="mailto:info@supermart.com" class="footer__address-content">
+                                                 <span class="descr-title">Email:</span> info@supermart.com
+                                              </a>
+                                          </li>
+                                          
+                                      </ul>
+                                  </address>
+                        </li>
+                        <li class="footer__content-item">
+                          <ul class="inner-list">
+                            <li class="inner-list-item">
+                              <h3 class="inner-list__title">COMPANY</h3>
+                            </li>
+                            <li class="inner-list-item">
+                              <a href="#" class="inner-list__link">
+                                Discount Vouches
+                              </a>
+                            </li>
+                            <li class="inner-list-item">
+                              <a href="#" class="inner-list__link">
+                                Spring Collection
+                              </a>
+                            </li>
+                            <li class="inner-list-item">
+                              <a href="#" class="inner-list__link">
+                                Trending
+                              </a>
+                            </li>
+                            <li class="inner-list-item">
+                              <a href="#" class="inner-list__link">
+                                Best Sellers
+                              </a>
+                            </li>
+                            <li class="inner-list-item">
+                              <a href="#" class="inner-list__link">
+                                Special Deals
+                              </a>
+                            </li>
+                            
                           </ul>
-                      </address>
-            </li>
-            <li class="footer__content-item">
-              <ul class="inner-list">
-                <li class="inner-list-item">
-                  <h3 class="inner-list__title">COMPANY</h3>
-                </li>
-                <li class="inner-list-item">
-                  <a href="#" class="inner-list__link">
-                    Discount Vouches
-                  </a>
-                </li>
-                <li class="inner-list-item">
-                  <a href="#" class="inner-list__link">
-                    Spring Collection
-                  </a>
-                </li>
-                <li class="inner-list-item">
-                  <a href="#" class="inner-list__link">
-                    Trending
-                  </a>
-                </li>
-                <li class="inner-list-item">
-                  <a href="#" class="inner-list__link">
-                    Best Sellers
-                  </a>
-                </li>
-                <li class="inner-list-item">
-                  <a href="#" class="inner-list__link">
-                    Special Deals
-                  </a>
-                </li>
-                
-              </ul>
-            </li>
-            <li class="footer__content-item">
-              <ul class="inner-list">
-                <li class="inner-list-item">
-                  <h3 class="inner-list__title">POLICY INFO</h3>
-                </li>
-                <li class="inner-list-item">
-                  <a href="#" class="inner-list__link">
-                    Orders &amp; Returns
-                  </a>
-                </li>
-                <li class="inner-list-item">
-                  <a href="#" class="inner-list__link">
-                    Advanced Search
-                  </a>
-                </li>
-                <li class="inner-list-item">
-                  <a href="#" class="inner-list__link">
-                    Help &amp; FAQs
-                  </a>
-                </li>
-                <li class="inner-list-item">
-                  <a href="#" class="inner-list__link">
-                    Consultant
-                  </a>
-                </li>
-                <li class="inner-list-item">
-                  <a href="#" class="inner-list__link">
-                    Store Locations
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="footer__content-item">
-              <ul class="inner-list">
-                <li class="inner-list-item">
-                  <h3 class="inner-list__title">My Account</h3>
-                </li>
-                <li class="inner-list-item">
-                  <a href="#" class="inner-list__link">About Us</a>
-                </li>
-                <li class="inner-list-item">
-                  <a href="#" class="inner-list__link">Delivery Information</a>
-                </li>
-                <li class="inner-list-item">
-                  <a href="#" class="inner-list__link">Privacy Policy</a>
-                </li>
-                <li class="inner-list-item">
-                  <a href="#" class="inner-list__link">Terms &amp; Conditions</a>
-                </li>
-                <li class="inner-list-item">
-                  <a href="#" class="inner-list__link">Custom Link</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+                        </li>
+                        <li class="footer__content-item">
+                          <ul class="inner-list">
+                            <li class="inner-list-item">
+                              <h3 class="inner-list__title">POLICY INFO</h3>
+                            </li>
+                            <li class="inner-list-item">
+                              <a href="#" class="inner-list__link">
+                                Orders &amp; Returns
+                              </a>
+                            </li>
+                            <li class="inner-list-item">
+                              <a href="#" class="inner-list__link">
+                                Advanced Search
+                              </a>
+                            </li>
+                            <li class="inner-list-item">
+                              <a href="#" class="inner-list__link">
+                                Help &amp; FAQs
+                              </a>
+                            </li>
+                            <li class="inner-list-item">
+                              <a href="#" class="inner-list__link">
+                                Consultant
+                              </a>
+                            </li>
+                            <li class="inner-list-item">
+                              <a href="#" class="inner-list__link">
+                                Store Locations
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="footer__content-item">
+                          <ul class="inner-list">
+                            <li class="inner-list-item">
+                              <h3 class="inner-list__title">My Account</h3>
+                            </li>
+                            <li class="inner-list-item">
+                              <a href="#" class="inner-list__link">About Us</a>
+                            </li>
+                            <li class="inner-list-item">
+                              <a href="#" class="inner-list__link">Delivery Information</a>
+                            </li>
+                            <li class="inner-list-item">
+                              <a href="#" class="inner-list__link">Privacy Policy</a>
+                            </li>
+                            <li class="inner-list-item">
+                              <a href="#" class="inner-list__link">Terms &amp; Conditions</a>
+                            </li>
+                            <li class="inner-list-item">
+                              <a href="#" class="inner-list__link">Custom Link</a>
+                            </li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
         <!-- ./content of footer -->
           <!-- bottom copyright -->
-      <div class="copyright-wrap">
-        <div class="copyright">
-          <span class="copyright__content">&copy; Copyright - Supermart Template by DesignFalls</span>
+        <div class="copyright-wrap">
+            <div class="copyright">
+                <span class="copyright__content">&copy; Copyright - Supermart Template by DesignFalls</span>
+            </div>
         </div>
-      </div>
-        <!-- ./bottom copyright -->
-      </footer>
 
-      <script src="js/libs.min.js"></script>
-      <script src="js/main-style.js"></script>
-      <script src="js/jquery-3.2.1.min.js"></script>
+        <!-- ./bottom copyright -->
+
+      
+
+    </footer>
+    <!-- modal window -->
+    <div id="form-account-login" class="white-popup mfp-hide">
+    <div class="form-account-sing">
+            <div class="form-account__content">
+                <h2 class="form-account__title">Login account</h2>
+
+                <form action="#" class="form-sing" id="form-login">
+                    <label class="form-sing__label">
+                        <input type="text" name="email " placeholder="Email address"  class="form-sing__input  form-control-login">
+                    </label>
+
+                    <label class="form-sing__label">
+                        <input type="password" name="password" placeholder="Password"  class="form-sing__input  form-control-password">
+                    </label>
+
+                    <div class="form-sing-button-wrap">
+                        <button type="submit" class="btn btn--top btn--submit" for="form-sing">login
+                        </button>
+                        <input type="checkbox" class="form__checkbox">
+                    </div>
+
+                    <p class="form-account__subtitle">lost your password?
+                        
+                    </p>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="form-account-sing" class="white-popup mfp-hide">
+        <div class="form-account-sing">
+            <div class="form-account__content">
+                <h2 class="form-account__title">Create your free account</h2>
+
+                <p class="form-account__subtitle">Come and join our cool and amazing community, fill in your details to get started. Already have an account? 
+                    <span><a href="#" class="form-sing__link">Log in.</a></span>
+                </p>
+                
+                <form action="#" class="form-sing" id="form-sing">
+                    <div class="form-sing--wrap">
+                        <div class="form-wrap--col">
+                            <label>
+                                <input type="text" name="first-name" placeholder="First name"  class="form-sing__input form-control-login">
+                            </label>
+                        </div>
+                        <div class="form-wrap--col">
+                            <label>
+                                <input type="text" name="last-name" placeholder="Last name"  class="form-sing__input  form-control-password">
+                            </label>
+                        </div>
+                    </div>
+
+                    <label class="form-sing__label">
+                        <input type="text" name="email " placeholder="Email address"  class="form-sing__input  form-control-login">
+                    </label>
+
+                    <label class="form-sing__label">
+                        <input type="password" name="password" placeholder="Password"  class="form-sing__input  form-control-password">
+                    </label>
+
+                    <div class="form-sing-button-wrap">
+                        <button type="submit" class="btn btn--top btn--submit" for="form-sing">Sign up for free
+                        </button>
+                    </div>
+
+                    <p class="form-account__subtitle">By clicking on “Sign up for free”, you agree to the 
+                        <span>
+                            <a href="#" class="form-sing__link">Terms of Service</a>
+                        </span>
+                         and the
+                        <span>
+                            <a href="#" class="form-sing__link">Privacy Policy</a>
+                        </span>
+                    </p>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- modal window -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main-style.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
 </body>
 </html>
