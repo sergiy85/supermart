@@ -1,3 +1,11 @@
+.wishlist{
+  @include row-flex();
+}
+.wishlist--wrap{
+  @include col();
+  @include size(12);
+}
+
 .wishlist__title{
   font-family: 'ralewaybold';
   color:#232323;
