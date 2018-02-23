@@ -3856,6 +3856,11 @@ batton.btn--banner {
   text-decoration: none;
 }
 
+.section-brands {
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
 /* four items features */
 
 .wrapper {
@@ -5682,6 +5687,11 @@ h3 {
   text-decoration: none;
 }
 
+.section-brands {
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
 .main-content-sidebar {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7206,6 +7216,11 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
+}
+
+.section-brands {
+  width: 100%;
+  background-color: #f9f9f9;
 }
 
 .main-content-sidebar {
